@@ -158,6 +158,31 @@ h2 svg{color:var(--teal)!important}
 .empty-pane{padding:22px;border:1px dashed var(--box);border-radius:14px;color:var(--muted);text-align:center}
 @media (max-width:780px){.plhead{grid-template-columns:1fr}.res-row{grid-template-columns:1fr}.res-row .f{justify-content:flex-start}}
 
+/* ----- weekly plan (3 lectures + videos + practice per week) ----- */
+.wkc{border:1px solid var(--line);border-radius:14px;margin:0 0 12px;background:var(--card);overflow:hidden}
+.wkc summary{display:grid;grid-template-columns:86px minmax(0,1fr) auto;gap:14px;align-items:center;padding:14px 16px;cursor:pointer;list-style:none}
+.wkc summary::-webkit-details-marker{display:none}
+.wkc summary::after{content:"+";font:700 20px var(--mono);color:var(--head);grid-column:4;grid-row:1}
+.wkc[open] summary::after{content:"−"}
+.wkc summary .wk{font:700 12px var(--mono);color:var(--head)}.wkc summary b{font-size:15px}
+.wkc .meta{font-size:12px;color:var(--muted)}
+.wkc[open] summary{border-bottom:1px solid var(--line);background:var(--soft)}
+.lrow{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 16px;border-bottom:1px solid var(--line)}
+.lrow .ln{font:700 12px var(--mono);color:#fff;background:var(--head);border-radius:8px;text-align:center;padding:3px 0}
+.lrow .lt{font-size:14.5px;font-weight:600}
+.fbtn.vid{background:#e62117}
+.pqh{font:800 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--head);padding:14px 16px 4px}
+.pq{margin:0;padding:4px 16px 8px 38px;font-size:14px}.pq li{margin:5px 0}
+.wkc .f{display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 14px}
+.glance{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:12px 0 4px}
+@media (max-width:560px){.glance{grid-template-columns:1fr}}
+.glance div{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--card)}
+.glance b{display:block;font:800 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--head);margin-bottom:4px}
+.glance p{margin:0!important;font-size:13.5px!important;color:var(--muted)}
+.abstract{border-left:4px solid var(--banner);padding:10px 16px;background:var(--soft);border-radius:0 12px 12px 0;margin:14px 0;font-size:14.5px}
+.abstract b{color:var(--head)}
+@media (max-width:780px){.wkc summary{grid-template-columns:1fr auto}.wkc summary .meta{display:none}.lrow{grid-template-columns:34px 1fr}.lrow .lf{grid-column:2}}
+
 /* ----- GCET Kashmir campus photo: blurred page backdrop + sharp banner ----- */
 html{background:var(--page)}
 body{background:transparent!important;position:relative}
