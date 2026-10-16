@@ -143,6 +143,11 @@ h2 svg{color:var(--teal)!important}
 .tc .res span{font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;background:var(--soft);border:1px solid var(--line)}
 .tc .res span b{color:var(--head)}
 
+/* inactive courses */
+.tc.off{filter:grayscale(.85);opacity:.62}.tc.off:hover{opacity:.9}
+.tc .top .sem{background:#ffffff33}
+.tc:not(.off) .top .sem{background:#2ed573;color:#06210f}
+
 /* ----- subject page tabs ----- */
 .tabs{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 16px;border-bottom:1px solid var(--line);padding-bottom:10px}
 .tabs button{border:1px solid var(--line);background:var(--card);color:var(--ink);font:700 14px var(--sans);padding:9px 16px;border-radius:999px;cursor:pointer}
