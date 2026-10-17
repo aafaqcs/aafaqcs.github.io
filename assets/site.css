@@ -200,6 +200,11 @@ body::after{content:"";position:fixed;inset:0;background:linear-gradient(180deg,
 :root[data-theme="dark"] body::after{background:linear-gradient(180deg,#050912e6 0%,#050912b3 50%,#05091ef0 100%)}
 footer .photo-credit{font-size:12px;opacity:.8}
 
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:18px 0 0;padding:16px 18px;border-radius:14px;background:linear-gradient(120deg,#0f766e,#115e59);color:#fff}
+.cta div{flex:1 1 260px}.cta b{display:block;font-size:18px;margin-bottom:2px}.cta span{font-size:14px;opacity:.92}
+.cta .btn{background:#fff;color:#0f5f58;font-weight:700;padding:9px 16px;border-radius:999px;text-decoration:none;font-size:14px}.cta .btn.alt{background:transparent;color:#fff;border:1.5px solid #ffffffaa}
+.guide .step{margin:26px 0}.guide .step h3{display:flex;gap:10px;align-items:center;margin:0 0 6px}.guide .step h3 i{font-style:normal;background:#e11d48;color:#fff;border-radius:50%;width:28px;height:28px;display:inline-grid;place-items:center;font-size:15px}
+.guide img{width:100%;border:1px solid var(--line,#d5dde8);border-radius:12px;box-shadow:0 8px 24px #0b1b2e22;margin-top:8px}
 /* ----- terminal intro (home) ----- */
 .term{border-radius:14px;overflow:hidden;background:#0a1220;border:1px solid #1d2b45;box-shadow:0 18px 44px #0b1b2e40;margin:20px 0 22px;font:14.5px/1.65 var(--mono);color:#d6e2f0}
 .term .tbar{display:flex;align-items:center;gap:7px;padding:9px 14px;background:#111d33;border-bottom:1px solid #1d2b45}
