@@ -176,6 +176,12 @@ h2 svg{color:var(--teal)!important}
 .lrow .ln{font:700 12px var(--mono);color:#fff;background:var(--head);border-radius:8px;text-align:center;padding:3px 0}
 .lrow .lt{font-size:14.5px;font-weight:600}
 .fbtn.vid{background:#e62117}
+.pqweek{border:1px solid var(--box);border-radius:12px;margin:12px 0;overflow:hidden;background:var(--bg,#fff)}
+.pqwh{display:flex;align-items:center;gap:12px;padding:12px 16px;background:var(--soft);border-bottom:1px solid var(--box)}
+.pqwh .wk{font:800 12px var(--mono);letter-spacing:.08em;color:var(--head)}.pqwh b{flex:1;font-size:15px}.pqwh .pqn{font:700 12px var(--mono);color:#c2410c}
+.pqt{padding:12px 20px 12px 42px!important}.pqt li{margin:9px 0!important;line-height:1.55}
+.pqf{padding:6px 16px 12px}.pqsoon{padding:12px 16px;color:var(--muted);font-size:14px}
+.pqlinkrow{padding:8px 16px 12px}.pqlink{font-weight:700;color:#c2410c;text-decoration:none}.pqlink:hover{text-decoration:underline}
 .pqh{font:800 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--head);padding:14px 16px 4px}
 .pq{margin:0;padding:4px 16px 8px 38px;font-size:14px}.pq li{margin:5px 0}
 .wkc .f{display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 14px}
