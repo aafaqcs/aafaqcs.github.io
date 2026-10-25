@@ -1,27 +1,447 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Python Programming · Dr. Aafaq</title><meta name="description" content="Python Programming: slides, notes, practice questions and video lectures. Python from zero to a small real project: three lectures every week, each with a video, slides and a practice set."><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Crect width='34' height='34' rx='8' fill='%230e8a7e'/%3E%3Cg stroke='white' stroke-width='2.4'%3E%3Cline x1='18' y1='17' x2='18' y2='7'/%3E%3Cline x1='18' y1='17' x2='8' y2='20'/%3E%3Cline x1='18' y1='17' x2='26' y2='26'/%3E%3C/g%3E%3Cg fill='white'%3E%3Ccircle cx='18' cy='17' r='4.5'/%3E%3Ccircle cx='18' cy='7' r='2.6'/%3E%3Ccircle cx='8' cy='20' r='2.6'/%3E%3Ccircle cx='26' cy='26' r='3'/%3E%3C/g%3E%3C/svg%3E"><link rel="canonical" href="https://aafaqcs.github.io/teaching/python.html">
-<meta property="og:type" content="website"><meta property="og:title" content="Python Programming · Dr. Aafaq"><meta property="og:description" content="Python Programming: slides, notes, practice questions and video lectures. Python from zero to a small real project: three lectures every week, each with a video, slides and a practice set."><meta property="og:image" content="https://aafaqcs.github.io/assets/img/photo.jpg">
-<meta name="theme-color" content="#0b1b2e"><script>(function(){var r=document.documentElement,t="auto";try{t=localStorage.getItem("theme")||"auto"}catch(e){}
-function set(v){t=v;if(v==="auto")r.removeAttribute("data-theme");else r.setAttribute("data-theme",v);try{localStorage.setItem("theme",v)}catch(e){}
-document.querySelectorAll(".theme button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.t===v)})}
-set(t);document.addEventListener("DOMContentLoaded",function(){set(t);document.querySelectorAll(".theme button").forEach(function(b){b.onclick=function(){set(b.dataset.t)}})})})()</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@700;800&family=JetBrains+Mono:wght@600;700&display=swap"><link rel="stylesheet" href="../assets/site.css?v=dc83c331"></head>
-<body><div class="sheet"><div class="bar"><a class="brand" href="../index.html">aafaq<b>cs</b></a><span class="inst">GCET KASHMIR<small>DEPARTMENT OF CSE</small></span><div class="theme" role="group" aria-label="Colour theme"><button data-t="light" title="Light theme">☀ Light</button><button data-t="dark" title="Dark theme">☾ Dark</button><button data-t="auto" title="Follow my device">Auto</button></div></div>
-<div class="cols"><div class="left"><img class="photo" src="../assets/img/photo.jpg" alt="Dr. Aafaq Mohi Ud Din">
-<nav class="menu"><a class="" href="../index.html">Home</a><a class="" href="../publications.html">Publications</a><a class="" href="../courses.html">Video courses</a><a class="on" href="../classes.html" aria-current=page>Teaching</a><a class="" href="../bio.html">Bio</a><a class="" href="../contact.html">Contact</a></nav>
-<div class="note">Preparing for GATE DA 2027? The full <a href="../courses/gate-da-ml.html">Machine Learning series</a> is free on YouTube, built on real data.</div>
-<a class="follow" href="https://www.youtube.com/channel/UCbrkPZ63BAZFrMLBf0tWzHA">▶ Subscribe on YouTube</a></div>
-<main class="right"><div class="banner"><svg viewBox="0 0 300 120" aria-hidden="true"><g stroke="#fff" stroke-width="1.6" fill="none"><path d="M40 90 L95 40 L160 70 L215 25 L270 60 M95 40 L120 105 L160 70 L200 110 L270 60 M215 25 L200 110 M40 90 L120 105"/></g><g fill="#fff"><circle cx="40" cy="90" r="5"/><circle cx="95" cy="40" r="7"/><circle cx="160" cy="70" r="9"/><circle cx="215" cy="25" r="6"/><circle cx="270" cy="60" r="7"/><circle cx="120" cy="105" r="5"/><circle cx="200" cy="110" r="6"/></g></svg><h1>Dr. Aafaq Mohi Ud Din.</h1><p>Assistant Professor, Department of CSE · GCET Kashmir</p></div><p class="crumb"><a href="../classes.html">Teaching</a> › Python Programming</p>
-<div class="plhead" style="grid-template-columns:1fr"><div><h2><svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><g stroke="currentColor" stroke-width="2.4"><line x1="19" y1="17" x2="19" y2="5"/><line x1="19" y1="17" x2="6" y2="20"/><line x1="19" y1="17" x2="29" y2="28"/></g><g fill="currentColor"><circle cx="19" cy="17" r="5.5"/><circle cx="19" cy="4.5" r="3"/><circle cx="5" cy="20.5" r="3"/><circle cx="29.5" cy="28.5" r="3.6"/></g></svg>Python Programming</h2><p>Python from zero to a small real project: three lectures every week, each with a video, slides and a practice set.</p><p class="meta">B.Tech CSE · Active · 15 weeks</p><div class="gcrbox" style="margin-top:8px"><a class="pill gcr" href="mailto:cse.aafaq@gmail.com?subject=Request%20to%20join%20Python%20Programming%20%28Google%20Classroom%29&body=Name%3A%0ARoll%20number%3A%0ABranch%20/%20semester%3A%0AGoogle%20account%20email%20to%20invite%20%28institute%20email%20preferred%29%3A%0A%0APlease%20add%20me%20to%20the%20class.">Request access</a> <a class="pill gcr" href="https://classroom.google.com/c/ODkyNDMzMTA0MjM1">Open Classroom</a> <span class="meta">Invitation only: send the request, I approve it by adding your email. Already added? Open Classroom.</span></div></div></div>
-<div class="tabwrap"><div class="tabs" role="tablist"><button type="button" role="tab" data-t="plan" aria-selected="true">▤ Weekly plan<span class="n">15</span></button><button type="button" role="tab" data-t="slides" aria-selected="false">▣ Slides<span class="n">0</span></button><button type="button" role="tab" data-t="notes" aria-selected="false">✎ Notes<span class="n">3</span></button><button type="button" role="tab" data-t="practice" aria-selected="false">? Practice Questions<span class="n">79</span></button><button type="button" role="tab" data-t="videos" aria-selected="false">▶ Videos<span class="n">2</span></button></div><div class="tabpane on" id="plan" role="tabpanel"><details class="wkc" open><summary><span class="wk">WEEK 01</span><b>Why Python, how Python runs programs, and installing Python</b><span class="meta">3 lectures · videos · practice</span></summary><div class="lrow"><span class="ln">L1</span><span class="lt">Why Python? Reasons, uses and the speed trade-off</span><span class="lf"></span></div><div class="lrow"><span class="ln">L2</span><span class="lt">How Python runs programs: interpreter, byte code and the PVM</span><span class="lf"></span></div><div class="lrow"><span class="ln">L3</span><span class="lt">Installing Python and running your first program: CMD, IDLE, Jupyter, PyCharm, VS Code</span><span class="lf"><a class="fbtn vid" href="https://youtu.be/SHYetLPC-9A" data-yt="SHYetLPC-9A">▶ Watch</a></span></div><div class="pqlinkrow"><a href="#practice" class="pqlink" onclick="var b=document.querySelector('[data-t=practice]');if(b){b.click();b.scrollIntoView({block:'center'});}return false">? 9 practice questions for this week →</a></div><div class="f"><a class="fbtn notes" href="../teaching/python/week01/Lec01_Notes_Compact.pdf" target="_blank" rel="noopener">✎ Lec01 Notes · PDF</a><a class="fbtn notes" href="../teaching/python/week01/Lec02_Notes_Compact.pdf" target="_blank" rel="noopener">✎ Lec02 Notes · PDF</a><a class="fbtn notes" href="../teaching/python/week01/Lec03_Notes.pdf" target="_blank" rel="noopener">✎ Lec03 Notes · PDF</a></div></details><details class="wkc"><summary><span class="wk">WEEK 02</span><b>Decisions and loops</b><span class="meta">3 lectures · videos · practice</span></summary><div class="lrow"><span class="ln">L1</span><span class="lt">if, elif and else; comparison and logical operators</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L2</span><span class="lt">while loops and common loop patterns</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L3</span><span class="lt">for loops, range(), break and continue</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="pqlinkrow"><a href="#practice" class="pqlink" onclick="var b=document.querySelector('[data-t=practice]');if(b){b.click();b.scrollIntoView({block:'center'});}return false">? 5 practice questions for this week →</a></div><div class="f"><span class='fbtn off'>Slides soon</span></div></details><details class="wkc"><summary><span class="wk">WEEK 03</span><b>Functions</b><span class="meta">3 lectures · videos · practice</span></summary><div class="lrow"><span class="ln">L1</span><span class="lt">Defining and calling functions; return values</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L2</span><span class="lt">Parameters: positional, keyword and default arguments</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L3</span><span class="lt">Scope, recursion and docstrings</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="pqlinkrow"><a href="#practice" class="pqlink" onclick="var b=document.querySelector('[data-t=practice]');if(b){b.click();b.scrollIntoView({block:'center'});}return false">? 5 practice questions for this week →</a></div><div class="f"><span class='fbtn off'>Slides soon</span></div></details><details class="wkc"><summary><span class="wk">WEEK 04</span><b>Strings</b><span class="meta">3 lectures · videos · practice</span></summary><div class="lrow"><span class="ln">L1</span><span class="lt">Indexing, slicing and immutability</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L2</span><span class="lt">String methods and f-string formatting</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L3</span><span class="lt">Text-processing problems</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="pqlinkrow"><a href="#practice" class="pqlink" onclick="var b=document.querySelector('[data-t=practice]');if(b){b.click();b.scrollIntoView({block:'center'});}return false">? 5 practice questions for this week →</a></div><div class="f"><span class='fbtn off'>Slides soon</span></div></details><details class="wkc"><summary><span class="wk">WEEK 05</span><b>Lists and tuples</b><span class="meta">3 lectures · videos · practice</span></summary><div class="lrow"><span class="ln">L1</span><span class="lt">Lists: creating, indexing, slicing and changing</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L2</span><span class="lt">List methods, nested lists and list comprehensions</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L3</span><span class="lt">Tuples, packing and unpacking</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="pqlinkrow"><a href="#practice" class="pqlink" onclick="var b=document.querySelector('[data-t=practice]');if(b){b.click();b.scrollIntoView({block:'center'});}return false">? 5 practice questions for this week →</a></div><div class="f"><span class='fbtn off'>Slides soon</span></div></details><details class="wkc"><summary><span class="wk">WEEK 06</span><b>Dictionaries and sets</b><span class="meta">3 lectures · videos · practice</span></summary><div class="lrow"><span class="ln">L1</span><span class="lt">Dictionaries: keys, values and iteration</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L2</span><span class="lt">Sets and set operations</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L3</span><span class="lt">Counting and grouping patterns</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="pqlinkrow"><a href="#practice" class="pqlink" onclick="var b=document.querySelector('[data-t=practice]');if(b){b.click();b.scrollIntoView({block:'center'});}return false">? 5 practice questions for this week →</a></div><div class="f"><span class='fbtn off'>Slides soon</span></div></details><details class="wkc"><summary><span class="wk">WEEK 07</span><b>Files and exceptions</b><span class="meta">3 lectures · videos · practice</span></summary><div class="lrow"><span class="ln">L1</span><span class="lt">Reading and writing text files; the with statement</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L2</span><span class="lt">CSV files and simple data processing</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L3</span><span class="lt">Exceptions: try, except, finally and raise</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="pqlinkrow"><a href="#practice" class="pqlink" onclick="var b=document.querySelector('[data-t=practice]');if(b){b.click();b.scrollIntoView({block:'center'});}return false">? 5 practice questions for this week →</a></div><div class="f"><span class='fbtn off'>Slides soon</span></div></details><details class="wkc"><summary><span class="wk">WEEK 08</span><b>Functional style and modules</b><span class="meta">3 lectures · videos · practice</span></summary><div class="lrow"><span class="ln">L1</span><span class="lt">lambda, map, filter and sorted with a key</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L2</span><span class="lt">Modules and packages: import, math, random, datetime</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L3</span><span class="lt">pip and virtual environments</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="pqlinkrow"><a href="#practice" class="pqlink" onclick="var b=document.querySelector('[data-t=practice]');if(b){b.click();b.scrollIntoView({block:'center'});}return false">? 5 practice questions for this week →</a></div><div class="f"><span class='fbtn off'>Slides soon</span></div></details><details class="wkc"><summary><span class="wk">WEEK 09</span><b>Object-oriented programming I</b><span class="meta">3 lectures · videos · practice</span></summary><div class="lrow"><span class="ln">L1</span><span class="lt">Classes and objects; __init__ and self</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L2</span><span class="lt">Instance and class attributes; methods</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L3</span><span class="lt">Encapsulation and properties</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="pqlinkrow"><a href="#practice" class="pqlink" onclick="var b=document.querySelector('[data-t=practice]');if(b){b.click();b.scrollIntoView({block:'center'});}return false">? 5 practice questions for this week →</a></div><div class="f"><span class='fbtn off'>Slides soon</span></div></details><details class="wkc"><summary><span class="wk">WEEK 10</span><b>Object-oriented programming II</b><span class="meta">3 lectures · videos · practice</span></summary><div class="lrow"><span class="ln">L1</span><span class="lt">Inheritance and method overriding</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L2</span><span class="lt">Polymorphism and special methods: __str__, __eq__, __add__</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L3</span><span class="lt">Dataclasses and a small object-oriented design</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="pqlinkrow"><a href="#practice" class="pqlink" onclick="var b=document.querySelector('[data-t=practice]');if(b){b.click();b.scrollIntoView({block:'center'});}return false">? 5 practice questions for this week →</a></div><div class="f"><span class='fbtn off'>Slides soon</span></div></details><details class="wkc"><summary><span class="wk">WEEK 11</span><b>Algorithms in Python</b><span class="meta">3 lectures · videos · practice</span></summary><div class="lrow"><span class="ln">L1</span><span class="lt">Linear search and binary search</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L2</span><span class="lt">Sorting: bubble, selection and insertion sort</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L3</span><span class="lt">Recursion and an introduction to complexity</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="pqlinkrow"><a href="#practice" class="pqlink" onclick="var b=document.querySelector('[data-t=practice]');if(b){b.click();b.scrollIntoView({block:'center'});}return false">? 5 practice questions for this week →</a></div><div class="f"><span class='fbtn off'>Slides soon</span></div></details><details class="wkc"><summary><span class="wk">WEEK 12</span><b>NumPy</b><span class="meta">3 lectures · videos · practice</span></summary><div class="lrow"><span class="ln">L1</span><span class="lt">Arrays, shapes and dtypes</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L2</span><span class="lt">Indexing, slicing and boolean masks</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L3</span><span class="lt">Vectorisation and broadcasting</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="pqlinkrow"><a href="#practice" class="pqlink" onclick="var b=document.querySelector('[data-t=practice]');if(b){b.click();b.scrollIntoView({block:'center'});}return false">? 5 practice questions for this week →</a></div><div class="f"><span class='fbtn off'>Slides soon</span></div></details><details class="wkc"><summary><span class="wk">WEEK 13</span><b>Pandas and visualisation</b><span class="meta">3 lectures · videos · practice</span></summary><div class="lrow"><span class="ln">L1</span><span class="lt">Series and DataFrames; reading a CSV</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L2</span><span class="lt">Selecting, filtering, grouping and cleaning data</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L3</span><span class="lt">Plots with matplotlib</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="pqlinkrow"><a href="#practice" class="pqlink" onclick="var b=document.querySelector('[data-t=practice]');if(b){b.click();b.scrollIntoView({block:'center'});}return false">? 5 practice questions for this week →</a></div><div class="f"><span class='fbtn off'>Slides soon</span></div></details><details class="wkc"><summary><span class="wk">WEEK 14</span><b>Python for the web and automation</b><span class="meta">3 lectures · videos · practice</span></summary><div class="lrow"><span class="ln">L1</span><span class="lt">JSON and calling web APIs with requests</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L2</span><span class="lt">Working with files and folders: os and pathlib</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L3</span><span class="lt">Automating small tasks</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="pqlinkrow"><a href="#practice" class="pqlink" onclick="var b=document.querySelector('[data-t=practice]');if(b){b.click();b.scrollIntoView({block:'center'});}return false">? 5 practice questions for this week →</a></div><div class="f"><span class='fbtn off'>Slides soon</span></div></details><details class="wkc"><summary><span class="wk">WEEK 15</span><b>Project, testing and revision</b><span class="meta">3 lectures · videos · practice</span></summary><div class="lrow"><span class="ln">L1</span><span class="lt">Planning and structuring a small project</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L2</span><span class="lt">Testing with assert and unittest or pytest</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="lrow"><span class="ln">L3</span><span class="lt">Revision and a mock test</span><span class="lf"><span class="fbtn off">Video soon</span></span></div><div class="pqlinkrow"><a href="#practice" class="pqlink" onclick="var b=document.querySelector('[data-t=practice]');if(b){b.click();b.scrollIntoView({block:'center'});}return false">? 5 practice questions for this week →</a></div><div class="f"><span class='fbtn off'>Slides soon</span></div></details></div><div class="tabpane" id="slides" role="tabpanel"><div class="res-row"><span class="wk">WEEK 01</span><span class="t">Why Python, how Python runs programs, and installing Python</span><span class="f"><span class='fbtn off'>Slides soon</span></span></div><div class="res-row"><span class="wk">WEEK 02</span><span class="t">Decisions and loops</span><span class="f"><span class='fbtn off'>Slides soon</span></span></div><div class="res-row"><span class="wk">WEEK 03</span><span class="t">Functions</span><span class="f"><span class='fbtn off'>Slides soon</span></span></div><div class="res-row"><span class="wk">WEEK 04</span><span class="t">Strings</span><span class="f"><span class='fbtn off'>Slides soon</span></span></div><div class="res-row"><span class="wk">WEEK 05</span><span class="t">Lists and tuples</span><span class="f"><span class='fbtn off'>Slides soon</span></span></div><div class="res-row"><span class="wk">WEEK 06</span><span class="t">Dictionaries and sets</span><span class="f"><span class='fbtn off'>Slides soon</span></span></div><div class="res-row"><span class="wk">WEEK 07</span><span class="t">Files and exceptions</span><span class="f"><span class='fbtn off'>Slides soon</span></span></div><div class="res-row"><span class="wk">WEEK 08</span><span class="t">Functional style and modules</span><span class="f"><span class='fbtn off'>Slides soon</span></span></div><div class="res-row"><span class="wk">WEEK 09</span><span class="t">Object-oriented programming I</span><span class="f"><span class='fbtn off'>Slides soon</span></span></div><div class="res-row"><span class="wk">WEEK 10</span><span class="t">Object-oriented programming II</span><span class="f"><span class='fbtn off'>Slides soon</span></span></div><div class="res-row"><span class="wk">WEEK 11</span><span class="t">Algorithms in Python</span><span class="f"><span class='fbtn off'>Slides soon</span></span></div><div class="res-row"><span class="wk">WEEK 12</span><span class="t">NumPy</span><span class="f"><span class='fbtn off'>Slides soon</span></span></div><div class="res-row"><span class="wk">WEEK 13</span><span class="t">Pandas and visualisation</span><span class="f"><span class='fbtn off'>Slides soon</span></span></div><div class="res-row"><span class="wk">WEEK 14</span><span class="t">Python for the web and automation</span><span class="f"><span class='fbtn off'>Slides soon</span></span></div><div class="res-row"><span class="wk">WEEK 15</span><span class="t">Project, testing and revision</span><span class="f"><span class='fbtn off'>Slides soon</span></span></div></div><div class="tabpane" id="notes" role="tabpanel"><div class="res-row"><span class="wk">WEEK 01</span><span class="t">Why Python, how Python runs programs, and installing Python</span><span class="f"><a class="fbtn notes" href="../teaching/python/week01/Lec01_Notes_Compact.pdf" target="_blank" rel="noopener">✎ Lec01 Notes · PDF</a><a class="fbtn notes" href="../teaching/python/week01/Lec02_Notes_Compact.pdf" target="_blank" rel="noopener">✎ Lec02 Notes · PDF</a><a class="fbtn notes" href="../teaching/python/week01/Lec03_Notes.pdf" target="_blank" rel="noopener">✎ Lec03 Notes · PDF</a></span></div><div class="res-row"><span class="wk">WEEK 02</span><span class="t">Decisions and loops</span><span class="f"><span class='fbtn off'>Notes soon</span></span></div><div class="res-row"><span class="wk">WEEK 03</span><span class="t">Functions</span><span class="f"><span class='fbtn off'>Notes soon</span></span></div><div class="res-row"><span class="wk">WEEK 04</span><span class="t">Strings</span><span class="f"><span class='fbtn off'>Notes soon</span></span></div><div class="res-row"><span class="wk">WEEK 05</span><span class="t">Lists and tuples</span><span class="f"><span class='fbtn off'>Notes soon</span></span></div><div class="res-row"><span class="wk">WEEK 06</span><span class="t">Dictionaries and sets</span><span class="f"><span class='fbtn off'>Notes soon</span></span></div><div class="res-row"><span class="wk">WEEK 07</span><span class="t">Files and exceptions</span><span class="f"><span class='fbtn off'>Notes soon</span></span></div><div class="res-row"><span class="wk">WEEK 08</span><span class="t">Functional style and modules</span><span class="f"><span class='fbtn off'>Notes soon</span></span></div><div class="res-row"><span class="wk">WEEK 09</span><span class="t">Object-oriented programming I</span><span class="f"><span class='fbtn off'>Notes soon</span></span></div><div class="res-row"><span class="wk">WEEK 10</span><span class="t">Object-oriented programming II</span><span class="f"><span class='fbtn off'>Notes soon</span></span></div><div class="res-row"><span class="wk">WEEK 11</span><span class="t">Algorithms in Python</span><span class="f"><span class='fbtn off'>Notes soon</span></span></div><div class="res-row"><span class="wk">WEEK 12</span><span class="t">NumPy</span><span class="f"><span class='fbtn off'>Notes soon</span></span></div><div class="res-row"><span class="wk">WEEK 13</span><span class="t">Pandas and visualisation</span><span class="f"><span class='fbtn off'>Notes soon</span></span></div><div class="res-row"><span class="wk">WEEK 14</span><span class="t">Python for the web and automation</span><span class="f"><span class='fbtn off'>Notes soon</span></span></div><div class="res-row"><span class="wk">WEEK 15</span><span class="t">Project, testing and revision</span><span class="f"><span class='fbtn off'>Notes soon</span></span></div></div><div class="tabpane" id="practice" role="tabpanel"><div class="pqweek"><div class="pqwh"><span class="wk">WEEK 01</span><b>Why Python, how Python runs programs, and installing Python</b><span class="pqn">9 questions</span></div><ol class="pq pqt"><li>Install Python on your own machine. Record the output of python --version and where python (which python3 on macOS).</li><li>In the interactive prompt compute 2**64, 7/2, 7//2 and len(&#x27;engineering&#x27;). Which results would differ in C?</li><li>Write hello.py in Notepad (or TextEdit) and run it from the terminal. Then deliberately save it as hello.txt; can python hello.txt still run it? Why?</li><li>Run hello.py in IDLE with F5, then type total in the Shell. Explain why it works.</li><li>Create a Jupyter notebook lab3.ipynb with a Markdown title, a cell setting x = 10, and a cell printing x * 2. Change x to 99 in the first cell without re-running it and run the second cell. What prints, and what does Restart &amp; Run All print?</li><li>Create a PyCharm project with a venv, run hello.py, and step through the loop in the debugger. Write down the values of total after each iteration.</li><li>In VS Code, open your lab folder, select the interpreter, and run hello.py using (a) the Run triangle, (b) Shift+Enter on the loop only, (c) F5.</li><li>In VS Code create a notebook, select a kernel, pip install numpy if needed, and run import numpy as np; print(np.arange(10).mean()).</li><li>Detective. A friend&#x27;s import numpy works in the terminal but fails in VS Code. Give two possible causes and the one line of Python that helps tell them apart.</li></ol></div><div class="pqweek"><div class="pqwh"><span class="wk">WEEK 02</span><b>Decisions and loops</b><span class="pqn">5 questions</span></div><ol class="pq pqt"><li>Read a number and print whether it is positive, negative or zero.</li><li>Check whether a year is a leap year.</li><li>Print the multiplication table of n using a for loop.</li><li>Find the sum of the digits of a number using a while loop.</li><li>Print the first 10 Fibonacci numbers.</li></ol></div><div class="pqweek"><div class="pqwh"><span class="wk">WEEK 03</span><b>Functions</b><span class="pqn">5 questions</span></div><ol class="pq pqt"><li>Write is_prime(n) and use it to print all primes below 100.</li><li>Write a function that returns the largest of three numbers without using max().</li><li>Write recursive functions for factorial and for the nth Fibonacci number.</li><li>What happens when a function assigns to a global variable without the global keyword? Explain.</li><li>Write a function with a default argument and call it in three different ways.</li></ol></div><div class="pqweek"><div class="pqwh"><span class="wk">WEEK 04</span><b>Strings</b><span class="pqn">5 questions</span></div><ol class="pq pqt"><li>Reverse a string using slicing.</li><li>Check whether a string is a palindrome, ignoring case and spaces.</li><li>Count the vowels in a sentence.</li><li>Replace every space in a string by a hyphen and then convert it to title case.</li><li>Given &quot;name=Asif;age=21&quot;, extract the name and the age into two variables.</li></ol></div><div class="pqweek"><div class="pqwh"><span class="wk">WEEK 05</span><b>Lists and tuples</b><span class="pqn">5 questions</span></div><ol class="pq pqt"><li>Remove duplicates from a list while keeping the order.</li><li>Find the second largest element of a list without sorting it.</li><li>Use a list comprehension to build the squares of the even numbers up to 20.</li><li>Rotate a list left by k positions.</li><li>Swap the first and last items of a tuple (hint: tuples are immutable).</li></ol></div><div class="pqweek"><div class="pqwh"><span class="wk">WEEK 06</span><b>Dictionaries and sets</b><span class="pqn">5 questions</span></div><ol class="pq pqt"><li>Count how often each word occurs in a sentence.</li><li>Merge two dictionaries. What happens to repeated keys?</li><li>Find the common and the different elements of two lists using sets.</li><li>Group a list of names by their first letter.</li><li>Invert a dictionary (swap keys and values) when the values are unique.</li></ol></div><div class="pqweek"><div class="pqwh"><span class="wk">WEEK 07</span><b>Files and exceptions</b><span class="pqn">5 questions</span></div><ol class="pq pqt"><li>Count the lines, words and characters in a text file.</li><li>Write the squares of 1 to 10 to a file, one per line.</li><li>Read a CSV file of marks and print each student&#x27;s average.</li><li>Make a division program that handles ZeroDivisionError and ValueError separately.</li><li>Write a function that raises ValueError for a negative age.</li></ol></div><div class="pqweek"><div class="pqwh"><span class="wk">WEEK 08</span><b>Functional style and modules</b><span class="pqn">5 questions</span></div><ol class="pq pqt"><li>Sort a list of (name, marks) pairs by marks, highest first, using sorted() with a key.</li><li>Use filter() to keep the strings longer than 4 characters.</li><li>Generate 5 random integers between 1 and 100 and print them in sorted order.</li><li>Print today&#x27;s date and the number of days left until 31 December.</li><li>Create a virtual environment, install one package, and list the commands you used.</li></ol></div><div class="pqweek"><div class="pqwh"><span class="wk">WEEK 09</span><b>Object-oriented programming I</b><span class="pqn">5 questions</span></div><ol class="pq pqt"><li>Define a Student class with name and marks and a method grade().</li><li>Create a BankAccount class with deposit() and withdraw() where the balance can never go negative.</li><li>Add a class attribute that counts how many objects have been created.</li><li>Use @property to expose the area of a Circle computed from its radius.</li><li>Explain the difference between a class and an object with one example.</li></ol></div><div class="pqweek"><div class="pqwh"><span class="wk">WEEK 10</span><b>Object-oriented programming II</b><span class="pqn">5 questions</span></div><ol class="pq pqt"><li>Create Shape, Circle and Rectangle classes, each with its own area().</li><li>Implement a Vector class that supports + and printing.</li><li>What does super() do? Show a case where it is required.</li><li>Convert a plain class with __init__ into a dataclass.</li><li>Design the classes for a library: Book, Member and Library. List the methods you would write.</li></ol></div><div class="pqweek"><div class="pqwh"><span class="wk">WEEK 11</span><b>Algorithms in Python</b><span class="pqn">5 questions</span></div><ol class="pq pqt"><li>Implement binary search and test it on a sorted list.</li><li>Implement insertion sort and count the number of comparisons.</li><li>Write a recursive power(x, n) that uses O(log n) multiplications.</li><li>Solve the Tower of Hanoi for 3 discs and print the moves.</li><li>State the time complexity of each of your sorting functions and explain why.</li></ol></div><div class="pqweek"><div class="pqwh"><span class="wk">WEEK 12</span><b>NumPy</b><span class="pqn">5 questions</span></div><ol class="pq pqt"><li>Create a 3 x 3 array of 1 to 9 and print its transpose and its row sums.</li><li>Replace all the negative numbers in an array by zero.</li><li>Normalise a vector to zero mean and unit variance.</li><li>Time a Python loop against NumPy for summing one million numbers.</li><li>Predict the shape of the result of adding a (3, 1) array to a (1, 4) array.</li></ol></div><div class="pqweek"><div class="pqwh"><span class="wk">WEEK 13</span><b>Pandas and visualisation</b><span class="pqn">5 questions</span></div><ol class="pq pqt"><li>Load a CSV and print its shape, its column names and the first 5 rows.</li><li>Find the mean marks per department using groupby.</li><li>Fill the missing values of a column with its median.</li><li>Draw a bar chart of the five highest values of a column.</li><li>Plot a histogram and describe what its shape tells you.</li></ol></div><div class="pqweek"><div class="pqwh"><span class="wk">WEEK 14</span><b>Python for the web and automation</b><span class="pqn">5 questions</span></div><ol class="pq pqt"><li>Fetch JSON from a public API and print three fields.</li><li>Rename all .txt files in a folder to add today&#x27;s date as a prefix.</li><li>Combine a folder of CSV files into one file.</li><li>Print the 10 most common words of a text file.</li><li>Handle a failed network request gracefully with try and except.</li></ol></div><div class="pqweek"><div class="pqwh"><span class="wk">WEEK 15</span><b>Project, testing and revision</b><span class="pqn">5 questions</span></div><ol class="pq pqt"><li>Build a small command-line project (for example a marks manager) with at least three functions and file storage.</li><li>Write five test cases for one function using assert.</li><li>Refactor one earlier program to remove repeated code.</li><li>Write a README that explains how to run your project.</li><li>Attempt the mock test within 90 minutes, then review every mistake.</li></ol></div></div><div class="tabpane" id="videos" role="tabpanel"><a class="lec" href="https://youtu.be/SHYetLPC-9A" data-yt="SHYetLPC-9A"><img src="../assets/img/yt_SHYetLPC-9A.jpg" alt="" loading="lazy"><div><b>Installing Python and running your first program: CMD, IDLE, Jupyter, PyCharm, VS Code</b><small>7:19 · install Python, then run one program six ways · notes: Lec03_Notes.pdf</small></div><span class="go">Watch ▸</span></a><a class="lec" href="https://youtu.be/ojrANEkx9kk" data-yt="ojrANEkx9kk"><img src="../assets/img/yt_ojrANEkx9kk.jpg" alt="" loading="lazy"><div><b>Learn Python Basics Visually: print(), Variables, Types &amp; All Operators</b><small>5:37</small></div><span class="go">Watch ▸</span></a></div></div><script>document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".tabs button");if(!b)return;
-var w=b.closest(".tabwrap");w.querySelectorAll(".tabs button").forEach(function(x){x.setAttribute("aria-selected",x===b)});
-w.querySelectorAll(".tabpane").forEach(function(p){p.classList.toggle("on",p.id===b.dataset.t)});history.replaceState(null,"","#"+b.dataset.t)});
-window.addEventListener("load",function(){var h=location.hash.slice(1);var b=h&&document.querySelector('.tabs button[data-t="'+h+'"]');if(b)b.click()})</script></main></div><div class="ytm" id="ytm" role="dialog" aria-label="Video player"><button class="x" type="button">✕ Close</button><a class="yt" id="ytl" href="#">Open on YouTube ↗</a></div>
-<script>(function(){var m=document.getElementById("ytm"),l=document.getElementById("ytl");if(!m)return;
-function close(){var f=m.querySelector("iframe");if(f)f.remove();m.classList.remove("on","v")}
-document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[data-yt]");
-if(a&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey){e.preventDefault();close();var f=document.createElement("iframe");
-f.src="https://www.youtube-nocookie.com/embed/"+a.dataset.yt+"?autoplay=1&rel=0";f.allow="autoplay; encrypted-media; picture-in-picture; fullscreen";f.allowFullscreen=true;
-m.insertBefore(f,l);l.href=a.href;m.classList.add("on");if(a.hasAttribute("data-short"))m.classList.add("v");return}
-if(e.target===m||e.target.classList.contains("x"))close()});
-document.addEventListener("keydown",function(e){if(e.key==="Escape")close()})})()</script>
-<footer><span>© 2026 Dr. Aafaq Mohi Ud Din</span><span><a href="https://www.youtube.com/channel/UCbrkPZ63BAZFrMLBf0tWzHA">YouTube</a> · <a href="https://www.linkedin.com/in/aafaq-cs-149bb9334/">LinkedIn</a> · <a href="https://scholar.google.com/citations?user=tZw2GSYAAAAJ&amp;hl=en">Google Scholar</a> · <a href="https://gcetkashmir.ac.in/academics/departments/computer-science-engineering/">GCET Kashmir profile</a></span><span class="photo-credit">Campus photo: GCET Kashmir</span><span class="sp">Last updated October 2026</span></footer></div></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Python Programming · Dr. Aafaq</title>
+  <meta name="description" content="Python Programming: notes, practice questions, and video lectures. Python from zero to a small real project.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Python Programming · Dr. Aafaq">
+  <meta property="og:description" content="Python Programming: notes, practice questions, and video lectures.">
+  <meta name="theme-color" content="#0b1b2e">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Cg stroke='white' stroke-width='2.4'%3E%3Cline x1='19' y1='17' x2='19' y2='5'/%3E%3Cline x1='19' y1='17' x2='6' y2='20'/%3E%3Cline x1='19' y1='17' x2='26' y2='26'/%3E%3C/g%3E%3Ccircle cx='19' cy='17' r='4.5'/%3E%3C/svg%3E">
+  <link rel="canonical" href="https://aafaqcs.github.io/teaching/python.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="../assets/site.css?v=dc83c331">
+  <style>
+    :root {
+      --bg: #f5f8fc;
+      --panel: #ffffff;
+      --panel-2: #edf4ff;
+      --text: #172435;
+      --muted: #5d7085;
+      --line: #dfeaf8;
+      --primary: #1b5cf6;
+      --primary-2: #eef5ff;
+      --success: #0d9b66;
+      --shadow: 0 18px 40px rgba(18, 35, 62, .12);
+    }
+    body { background: linear-gradient(180deg, #f4f7fb 0%, #edf2fa 100%); }
+    .lecture-list {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .lecture-row {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 1rem;
+      padding: 1rem 1.1rem;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(11, 21, 36, .04);
+    }
+    @media (max-width: 780px) {
+      .lecture-row { grid-template-columns: 1fr; }
+    }
+    .lec-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .6rem;
+      color: var(--muted);
+      font-size: .85rem;
+      margin-bottom: .4rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: .35rem .7rem;
+      border-radius: 999px;
+      background: var(--primary-2);
+      color: var(--primary);
+      font-weight: 700;
+      letter-spacing: .02em;
+      font-size: .75rem;
+    }
+    .lecture-card-title {
+      font-size: 1.1rem;
+      margin: 0;
+      color: var(--text);
+      line-height: 1.4;
+    }
+    .lecture-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      gap: .6rem;
+    }
+    @media (max-width: 780px) {
+      .lecture-actions { justify-content: flex-start; }
+    }
+    .fbtn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      padding: .6rem .8rem;
+      border-radius: 10px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: .2s ease;
+      font-size: .9rem;
+      background: #fff;
+      color: var(--text);
+    }
+    .fbtn.primary { background: var(--primary); border-color: var(--primary); color: white; }
+    .fbtn.success { background: rgba(13,155,102,.12); border-color: rgba(13,155,102,.2); color: var(--success); }
+    .fbtn:hover { transform: translateY(-1px); }
+    .tabpane { display: none; }
+    .tabpane.on { display: block; }
+    .tabs button { cursor: pointer; }
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .mini-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 1rem;
+      box-shadow: 0 8px 20px rgba(10, 20, 36, .03);
+    }
+    .mini-card h4 { margin: 0 0 .7rem; }
+    .mini-card ul { margin: 0; padding-left: 1.1rem; color: var(--muted); }
+    .mini-card li + li { margin-top: .45rem; }
+    .yt-card {
+      display: grid;
+      grid-template-columns: 1.1fr 2fr;
+      gap: 1rem;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 12px 26px rgba(12, 28, 46, .06);
+      margin-top: 1rem;
+    }
+    @media (max-width: 760px) { .yt-card { grid-template-columns: 1fr; } }
+    .yt-thumb {
+      display: block;
+      min-height: 160px;
+      background: linear-gradient(135deg, #1d5bff, #0a1f3e);
+      position: relative;
+    }
+    .yt-thumb::before {
+      content: "▶";
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      font-size: 2.5rem;
+      color: white;
+      opacity: .9;
+    }
+    .yt-copy { padding: 1rem 1.1rem 1.1rem; }
+    .yt-copy h3 { margin-top: 0; }
+    .yt-copy p { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="bar">
+      <a class="brand" href="../index.html">aafaq<b>cs</b></a>
+      <span class="inst">GCET KASHMIR<small>DEPARTMENT OF CSE</small></span>
+      <div class="theme" role="group" aria-label="Colour theme">
+        <button data-t="light" title="Light theme">☀ Light</button>
+        <button data-t="dark" title="Dark theme">☾ Dark</button>
+        <button data-t="auto" title="Follow my device">Auto</button>
+      </div>
+    </div>
+
+    <div class="cols">
+      <div class="left">
+        <img class="photo" src="../assets/img/photo.jpg" alt="Dr. Aafaq Mohi Ud Din">
+        <nav class="menu">
+          <a class="" href="../index.html">Home</a>
+          <a class="" href="../publications.html">Publications</a>
+          <a class="" href="../courses.html">Video courses</a>
+          <a class="on" href="../classes.html">Teaching</a>
+          <a class="" href="../bio.html">Bio</a>
+          <a class="" href="../contact.html">Contact</a>
+        </nav>
+        <div class="note">Preparing for GATE DA 2027? The full <a href="../courses/gate-da-ml.html">Machine Learning series</a> is free on YouTube, built on real data.</div>
+        <a class="follow" href="https://www.youtube.com/channel/UCbrkPZ63BAZFrMLBf0tWzHA">▶ Subscribe on YouTube</a>
+      </div>
+
+      <main class="right">
+        <div class="banner">
+          <svg viewBox="0 0 300 120" aria-hidden="true">
+            <g stroke="#fff" stroke-width="1.6" fill="none">
+              <path d="M40 90 L95 40 L160 70 L215 25 L270 60 M95 40 L120 105 L160 70 L200 110 L270 60 M215 25 L200 110 M40 90 L120 105"/>
+            </g>
+            <g fill="#fff">
+              <circle cx="40" cy="90" r="5"/>
+              <circle cx="95" cy="40" r="7"/>
+              <circle cx="160" cy="70" r="9"/>
+              <circle cx="215" cy="25" r="6"/>
+              <circle cx="270" cy="60" r="7"/>
+              <circle cx="120" cy="105" r="5"/>
+              <circle cx="200" cy="110" r="6"/>
+            </g>
+          </svg>
+          <h1>Dr. Aafaq Mohi Ud Din.</h1>
+          <p>Assistant Professor, Department of CSE, GCET Kashmir</p>
+        </div>
+
+        <p class="crumb"><a href="../classes.html">Teaching</a> → Python Programming</p>
+
+        <div class="plhead" style="grid-template-columns:1fr">
+          <div>
+            <h2>Python Programming</h2>
+            <p>Python from zero to a small real project: three lectures every week, each with a video, slides and practice set.</p>
+            <p class="meta">B.Tech CSE • Active Semester 15 weeks</p>
+            <div class="gcrbox" style="margin-top:8px">
+              <a class="pill gcr" href="mailto:cse.aafaq@gmail.com?subject=Request%20to%20join%20Python%20Programming%20%28Google%20Classroom%29&body=Name%3A%0ARoll%20number%3A%0ABranch%20%2F%20semester%3A%0AGoogle%20account%20email%20to%20invite%20%28institute%20email%20preferred%29%3A%0A%0APlease%20add%20me%20to%20the%20class.">Request access</a>
+              <a class="pill gcr" href="https://classroom.google.com/c/ODkyNDMzMTA0MjE1">Open Classroom</a>
+              <span class="meta">Invitation only: send the request, I approve it by adding your email. Already added? Open Classroom.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tabwrap">
+          <div class="tabs" role="tablist">
+            <button type="button" role="tab" data-t="plan" aria-selected="true">▤ Weekly plan<span class="n">15</span></button>
+            <button type="button" role="tab" data-t="slides" aria-selected="false">▣ Slides<span class="n">0</span></button>
+            <button type="button" role="tab" data-t="notes" aria-selected="false">✎ Notes<span class="n">15</span></button>
+            <button type="button" role="tab" data-t="practice" aria-selected="false">? Practice Questions<span class="n">79</span></button>
+            <button type="button" role="tab" data-t="videos" aria-selected="false">▶ Videos<span class="n">2</span></button>
+          </div>
+
+          <div class="tabpane on" id="plan" role="tabpanel">
+            <details class="wkc" open>
+              <summary><span class="wk">WEEK 01</span><b>Why Python, how Python runs programs, and installing Python</b><span class="meta">3 lectures • 3 videos • practice</span></summary>
+              <div class="lrow"><span class="ln">L1</span><span class="lt">Why Python? Reasons, uses and the speed trade-off</span><span class="lf"><a class="fbtn primary" href="#notes">Notes</a><a class="fbtn success" href="#practice">Practice</a><a class="fbtn" href="https://youtu.be/SHYetLPC-9A" target="_blank" rel="noopener">Video</a></span></div>
+              <div class="lrow"><span class="ln">L2</span><span class="lt">How Python runs programs: interpreter, byte code and the PVM</span><span class="lf"><a class="fbtn primary" href="#notes">Notes</a><a class="fbtn success" href="#practice">Practice</a><a class="fbtn" href="https://youtu.be/SHYetLPC-9A" target="_blank" rel="noopener">Video</a></span></div>
+              <div class="lrow"><span class="ln">L3</span><span class="lt">Installing Python and running your first program: CMD, IDLE, Jupyter, PyCharm, VS Code</span><span class="lf"><a class="fbtn primary" href="#notes">Notes</a><a class="fbtn success" href="#practice">Practice</a><a class="fbtn" href="https://youtu.be/SHYetLPC-9A" target="_blank" rel="noopener">Video</a></span></div>
+            </details>
+
+            <details class="wkc">
+              <summary><span class="wk">WEEK 02</span><b>Decisions and loops</b><span class="meta">3 lectures • 3 videos • practice</span></summary>
+              <div class="lrow"><span class="ln">L1</span><span class="lt">if, elif and else; comparison and logical operators</span><span class="lf"><a class="fbtn primary" href="#notes">Notes</a><a class="fbtn success" href="#practice">Practice</a><a class="fbtn" href="https://youtu.be/ojrANEkx9kk" target="_blank" rel="noopener">Video</a></span></div>
+              <div class="lrow"><span class="ln">L2</span><span class="lt">while loops and common loop patterns</span><span class="lf"><a class="fbtn primary" href="#notes">Notes</a><a class="fbtn success" href="#practice">Practice</a><a class="fbtn" href="https://youtu.be/ojrANEkx9kk" target="_blank" rel="noopener">Video</a></span></div>
+              <div class="lrow"><span class="ln">L3</span><span class="lt">for loops, range(), break and continue</span><span class="lf"><a class="fbtn primary" href="#notes">Notes</a><a class="fbtn success" href="#practice">Practice</a><a class="fbtn" href="https://youtu.be/ojrANEkx9kk" target="_blank" rel="noopener">Video</a></span></div>
+            </details>
+
+            <details class="wkc">
+              <summary><span class="wk">WEEK 03</span><b>Functions</b><span class="meta">3 lectures • 3 videos • practice</span></summary>
+              <div class="lrow"><span class="ln">L1</span><span class="lt">Defining and calling functions; return values</span><span class="lf"><a class="fbtn primary" href="#notes">Notes</a><a class="fbtn success" href="#practice">Practice</a><a class="fbtn" href="https://www.youtube.com/watch?v=SHYetLPC-9A" target="_blank" rel="noopener">Video</a></span></div>
+              <div class="lrow"><span class="ln">L2</span><span class="lt">Parameters: positional, keyword and default arguments</span><span class="lf"><a class="fbtn primary" href="#notes">Notes</a><a class="fbtn success" href="#practice">Practice</a><a class="fbtn" href="https://www.youtube.com/watch?v=SHYetLPC-9A" target="_blank" rel="noopener">Video</a></span></div>
+              <div class="lrow"><span class="ln">L3</span><span class="lt">Scope, recursion and docstrings</span><span class="lf"><a class="fbtn primary" href="#notes">Notes</a><a class="fbtn success" href="#practice">Practice</a><a class="fbtn" href="https://www.youtube.com/watch?v=SHYetLPC-9A" target="_blank" rel="noopener">Video</a></span></div>
+            </details>
+          </div>
+
+          <div class="tabpane" id="slides" role="tabpanel">
+            <div class="mini-grid">
+              <div class="mini-card">
+                <h4>Slides are coming soon</h4>
+                <ul>
+                  <li>Lecture deck for each week will be added here.</li>
+                  <li>For now, use the Notes section and video lessons.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabpane" id="notes" role="tabpanel">
+            <div class="lecture-list">
+              <div class="lecture-row">
+                <div>
+                  <div class="lec-meta"><span class="badge">Week 01</span><span>Lecture 1</span></div>
+                  <h3 class="lecture-card-title">Why Python? Reasons, uses and the speed trade-off</h3>
+                </div>
+                <div class="lecture-actions">
+                  <a class="fbtn primary" href="../teaching/python/week01/Lec01_Notes_Compact.pdf" target="_blank" rel="noopener">Notes</a>
+                  <a class="fbtn success" href="#practice">Practice Questions</a>
+                  <a class="fbtn" href="https://youtu.be/SHYetLPC-9A" target="_blank" rel="noopener">Video</a>
+                </div>
+              </div>
+
+              <div class="lecture-row">
+                <div>
+                  <div class="lec-meta"><span class="badge">Week 01</span><span>Lecture 2</span></div>
+                  <h3 class="lecture-card-title">How Python runs programs: interpreter, byte code and the PVM</h3>
+                </div>
+                <div class="lecture-actions">
+                  <a class="fbtn primary" href="../teaching/python/week01/Lec02_Notes_Compact.pdf" target="_blank" rel="noopener">Notes</a>
+                  <a class="fbtn success" href="#practice">Practice Questions</a>
+                  <a class="fbtn" href="https://youtu.be/SHYetLPC-9A" target="_blank" rel="noopener">Video</a>
+                </div>
+              </div>
+
+              <div class="lecture-row">
+                <div>
+                  <div class="lec-meta"><span class="badge">Week 01</span><span>Lecture 3</span></div>
+                  <h3 class="lecture-card-title">Installing Python and running your first program</h3>
+                </div>
+                <div class="lecture-actions">
+                  <a class="fbtn primary" href="../teaching/python/week01/Lec03_Notes.pdf" target="_blank" rel="noopener">Notes</a>
+                  <a class="fbtn success" href="#practice">Practice Questions</a>
+                  <a class="fbtn" href="https://youtu.be/SHYetLPC-9A" target="_blank" rel="noopener">Video</a>
+                </div>
+              </div>
+
+              <div class="lecture-row">
+                <div>
+                  <div class="lec-meta"><span class="badge">Week 02</span><span>Lecture 1</span></div>
+                  <h3 class="lecture-card-title">if, elif and else; comparison and logical operators</h3>
+                </div>
+                <div class="lecture-actions">
+                  <a class="fbtn primary" href="#notes">Notes</a>
+                  <a class="fbtn success" href="#practice">Practice Questions</a>
+                  <a class="fbtn" href="https://youtu.be/ojrANEkx9kk" target="_blank" rel="noopener">Video</a>
+                </div>
+              </div>
+
+              <div class="lecture-row">
+                <div>
+                  <div class="lec-meta"><span class="badge">Week 02</span><span>Lecture 2</span></div>
+                  <h3 class="lecture-card-title">while loops and common loop patterns</h3>
+                </div>
+                <div class="lecture-actions">
+                  <a class="fbtn primary" href="#notes">Notes</a>
+                  <a class="fbtn success" href="#practice">Practice Questions</a>
+                  <a class="fbtn" href="https://youtu.be/ojrANEkx9kk" target="_blank" rel="noopener">Video</a>
+                </div>
+              </div>
+
+              <div class="lecture-row">
+                <div>
+                  <div class="lec-meta"><span class="badge">Week 02</span><span>Lecture 3</span></div>
+                  <h3 class="lecture-card-title">for loops, range(), break and continue</h3>
+                </div>
+                <div class="lecture-actions">
+                  <a class="fbtn primary" href="#notes">Notes</a>
+                  <a class="fbtn success" href="#practice">Practice Questions</a>
+                  <a class="fbtn" href="https://youtu.be/ojrANEkx9kk" target="_blank" rel="noopener">Video</a>
+                </div>
+              </div>
+
+              <div class="lecture-row">
+                <div>
+                  <div class="lec-meta"><span class="badge">Week 03</span><span>Lecture 1</span></div>
+                  <h3 class="lecture-card-title">Functions: defining and calling functions; return values</h3>
+                </div>
+                <div class="lecture-actions">
+                  <a class="fbtn primary" href="#notes">Notes</a>
+                  <a class="fbtn success" href="#practice">Practice Questions</a>
+                  <a class="fbtn" href="https://www.youtube.com/watch?v=SHYetLPC-9A" target="_blank" rel="noopener">Video</a>
+                </div>
+              </div>
+
+              <div class="lecture-row">
+                <div>
+                  <div class="lec-meta"><span class="badge">Week 03</span><span>Lecture 2</span></div>
+                  <h3 class="lecture-card-title">Parameters: positional, keyword and default arguments</h3>
+                </div>
+                <div class="lecture-actions">
+                  <a class="fbtn primary" href="#notes">Notes</a>
+                  <a class="fbtn success" href="#practice">Practice Questions</a>
+                  <a class="fbtn" href="https://www.youtube.com/watch?v=SHYetLPC-9A" target="_blank" rel="noopener">Video</a>
+                </div>
+              </div>
+
+              <div class="lecture-row">
+                <div>
+                  <div class="lec-meta"><span class="badge">Week 03</span><span>Lecture 3</span></div>
+                  <h3 class="lecture-card-title">Scope, recursion and docstrings</h3>
+                </div>
+                <div class="lecture-actions">
+                  <a class="fbtn primary" href="#notes">Notes</a>
+                  <a class="fbtn success" href="#practice">Practice Questions</a>
+                  <a class="fbtn" href="https://www.youtube.com/watch?v=SHYetLPC-9A" target="_blank" rel="noopener">Video</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabpane" id="practice" role="tabpanel">
+            <div class="mini-grid">
+              <div class="mini-card">
+                <h4>Week 01</h4>
+                <ul>
+                  <li>Install Python on your machine and record the output of python --version.</li>
+                  <li>In the interactive prompt compute 3 * 2, 7/2 and 7 // 2.</li>
+                  <li>Write a Python script that prints your name and the current date.</li>
+                  <li>List the differences between a compiler and an interpreter.</li>
+                </ul>
+              </div>
+              <div class="mini-card">
+                <h4>Week 02</h4>
+                <ul>
+                  <li>Read a number and print whether it is positive, negative or zero.</li>
+                  <li>Check whether a year is a leap year.</li>
+                  <li>Print the multiplication table of n using a for loop.</li>
+                  <li>Find the sum of digits of a number using while.</li>
+                </ul>
+              </div>
+              <div class="mini-card">
+                <h4>Week 03</h4>
+                <ul>
+                  <li>Write is_prime(n) and use it to print all primes below 100.</li>
+                  <li>Write a function that returns the largest of three numbers without using max().</li>
+                  <li>Write recursive functions for factorial and Fibonacci numbers.</li>
+                  <li>Explain what happens when a function assigns to a global variable without the global keyword.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabpane" id="videos" role="tabpanel">
+            <div class="yt-card">
+              <a class="yt-thumb" href="https://youtu.be/SHYetLPC-9A" target="_blank" rel="noopener" aria-label="Watch lecture video"></a>
+              <div class="yt-copy">
+                <h3>Installing Python and running your first program</h3>
+                <p>Lecture 3 in Week 01: CMD, IDLE, Jupyter, PyCharm, VS Code, and a first Python script.</p>
+                <p><a class="fbtn primary" href="https://youtu.be/SHYetLPC-9A" target="_blank" rel="noopener">Watch on YouTube</a></p>
+              </div>
+            </div>
+
+            <div class="yt-card">
+              <a class="yt-thumb" href="https://youtu.be/ojrANEkx9kk" target="_blank" rel="noopener" aria-label="Watch lecture video"></a>
+              <div class="yt-copy">
+                <h3>Decision making and loops</h3>
+                <p>Week 02 core video covering if/else, while loops and for loops with common patterns.</p>
+                <p><a class="fbtn primary" href="https://youtu.be/ojrANEkx9kk" target="_blank" rel="noopener">Watch on YouTube</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      var tabs = document.querySelectorAll('.tabs button');
+      var panes = document.querySelectorAll('.tabpane');
+      tabs.forEach(function(button){
+        button.addEventListener('click', function(){
+          tabs.forEach(function(btn){ btn.setAttribute('aria-selected', btn === button); });
+          panes.forEach(function(p){ p.classList.toggle('on', p.id === button.dataset.t); });
+          history.replaceState(null, '', '#' + button.dataset.t);
+        });
+      });
+      var hash = location.hash.slice(1);
+      if (hash) {
+        var target = document.querySelector('.tabs button[data-t="' + hash + '"]');
+        if (target) target.click();
+      }
+    })();
+  </script>
+</body>
+</html>
