@@ -36,13 +36,14 @@
     }
     .lecture-row {
       display: grid;
-      grid-template-columns: 1.5fr 1fr;
+      grid-template-columns: minmax(0, 1.6fr) minmax(220px, 1fr);
       gap: 1rem;
       padding: 1rem 1.1rem;
       background: var(--panel);
       border: 1px solid var(--line);
       border-radius: 16px;
       box-shadow: 0 8px 20px rgba(11, 21, 36, .04);
+      align-items: center;
     }
     @media (max-width: 780px) {
       .lecture-row { grid-template-columns: 1fr; }
@@ -95,6 +96,7 @@
       font-size: .9rem;
       background: #fff;
       color: var(--text);
+      white-space: nowrap;
     }
     .fbtn.primary { background: var(--primary); border-color: var(--primary); color: white; }
     .fbtn.success { background: rgba(13,155,102,.12); border-color: rgba(13,155,102,.2); color: var(--success); }
@@ -235,7 +237,7 @@
               <div class="lrow"><span class="ln">L1</span><span class="lt">if, elif and else; comparison and logical operators</span><span class="lf"><a class="fbtn primary" href="#notes">Notes</a><a class="fbtn success" href="#practice">Practice</a><a class="fbtn" href="https://youtu.be/ojrANEkx9kk" target="_blank" rel="noopener">Video</a></span></div>
               <div class="lrow"><span class="ln">L2</span><span class="lt">while loops and common loop patterns</span><span class="lf"><a class="fbtn primary" href="#notes">Notes</a><a class="fbtn success" href="#practice">Practice</a><a class="fbtn" href="https://youtu.be/ojrANEkx9kk" target="_blank" rel="noopener">Video</a></span></div>
               <div class="lrow"><span class="ln">L3</span><span class="lt">for loops, range(), break and continue</span><span class="lf"><a class="fbtn primary" href="#notes">Notes</a><a class="fbtn success" href="#practice">Practice</a><a class="fbtn" href="https://youtu.be/ojrANEkx9kk" target="_blank" rel="noopener">Video</a></span></div>
-              <div class="lrow"><span class="ln">L4</span><span class="lt">Loop debugging, nested loops, and mini practice problems</span><span class="lf"><a class="fbtn primary" href="#notes">Notes</a><a class="fbtn success" href="#practice">Practice</a><a class="fbtn" href="https://youtu.be/ojrANEkx9kk" target="_blank" rel="noopener">Video</a></span></div>
+              <div class="lrow"><span class="ln">L4</span><span class="lt">Learn Python Basics Visually: print(), Variables, Types & All Operators</span><span class="lf"><a class="fbtn primary" href="#notes">Notes</a><a class="fbtn success" href="#practice">Practice</a><a class="fbtn" href="https://youtu.be/ojrANEkx9kk" target="_blank" rel="noopener">Video 2</a></span></div>
             </details>
 
             <details class="wkc">
@@ -335,12 +337,12 @@
               <div class="lecture-row">
                 <div>
                   <div class="lec-meta"><span class="badge">Week 02</span><span>Lecture 4</span></div>
-                  <h3 class="lecture-card-title">Loop debugging, nested loops, and mini practice problems</h3>
+                  <h3 class="lecture-card-title">Learn Python Basics Visually: print(), Variables, Types &amp; All Operators</h3>
                 </div>
                 <div class="lecture-actions">
                   <a class="fbtn primary" href="#notes">Notes</a>
                   <a class="fbtn success" href="#practice">Practice Questions</a>
-                  <a class="fbtn" href="https://youtu.be/ojrANEkx9kk" target="_blank" rel="noopener">Video</a>
+                  <a class="fbtn" href="https://youtu.be/ojrANEkx9kk" target="_blank" rel="noopener">Video 2</a>
                 </div>
               </div>
 
@@ -404,8 +406,8 @@
             <div class="yt-card">
               <a class="yt-thumb" href="https://youtu.be/ojrANEkx9kk" target="_blank" rel="noopener" aria-label="Watch lecture video"></a>
               <div class="yt-copy">
-                <h3>Week 02: Decisions and loops</h3>
-                <p>Lecture 4 includes loop debugging, nested loops, and a practice walkthrough to reinforce conditional and repetition logic.</p>
+                <h3>Learn Python Basics Visually: print(), Variables, Types &amp; All Operators</h3>
+                <p>Week 02, Lecture 4: video 2 for decision-making and loop fundamentals, aligned with the lesson title.</p>
                 <p><a class="fbtn primary" href="https://youtu.be/ojrANEkx9kk" target="_blank" rel="noopener">Watch on YouTube</a></p>
               </div>
             </div>
